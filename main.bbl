@@ -1,0 +1,33 @@
+\begin{thebibliography}{}
+
+\bibitem[Huang and Rein, 2014]{huang_smouldering_2014}
+Huang, X. and Rein, G. (2014).
+\newblock Smouldering combustion of peat in wildfires: {Inverse} modelling of the drying and the thermal and oxidative decomposition kinetics.
+\newblock {\em Combustion and Flame}, 161(6):1633--1644.
+
+\bibitem[Malow and Krause, 2008]{malow_smoldering_2008}
+Malow, M. and Krause, U. (2008).
+\newblock Smoldering combustion of solid bulk materials at different volume fractions of oxygen in the surrounding gas.
+\newblock {\em Fire Safety Science}, 9:303--314.
+
+\bibitem[Rein, 2011]{rein_smoldering_2011}
+Rein, G. (2011).
+\newblock Smoldering {Combustion} {Phenomena} and {Coal} {Fires}.
+\newblock In {\em Coal and {Peat} {Fires}: {A} {Global} {Perspective}}, pages 307--315. Elsevier.
+
+\bibitem[Rein, 2016]{Rein2016}
+Rein, G. (2016).
+\newblock Smoldering combustion.
+\newblock In {\em SFPE handbook of fire protection engineering}, pages 581--603. Springer.
+
+\bibitem[Rein et~al., 2007]{Rein2007}
+Rein, G., Fernandez-Pello, A.~C., and Urban, D.~L. (2007).
+\newblock Computational model of forward and opposed smoldering combustion in microgravity.
+\newblock {\em Proceedings of the Combustion Institute}, 31(2):2677--2684.
+
+\bibitem[Rein et~al., 2006]{Rein2006application}
+Rein, G., Lautenberger, C., Fernandez-Pello, A.~C., Torero, J.~L., and Urban, D.~L. (2006).
+\newblock Application of genetic algorithms and thermogravimetry to determine the kinetics of polyurethane foam in smoldering combustion.
+\newblock {\em Combustion and flame}, 146(1-2):95--108.
+
+\end{thebibliography}

@@ -1,0 +1,247 @@
+\documentclass[11pt,a4paper,twocolumn]{article} 
+
+% Codifying the languague
+\usepackage[english]{babel} 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Codifying the format and margins
+\usepackage[legalpaper,  left=1cm, right=1cm, top=2cm, bottom=2cm]{geometry} 
+\usepackage{setspace}
+\setstretch{1.15} 
+
+% Defining the color of the paper
+\usepackage{xcolor}
+\definecolor{ultraWhite}{RGB}{255,255,255} % Top White
+\definecolor{academicBeige}{RGB}{250, 244, 232} % Springer books
+\definecolor{oldNotebook}{RGB}{246, 234, 194}
+\pagecolor{oldNotebook}
+
+% Codifying the typography
+\usepackage{libertinus}
+\usepackage{microtype} % To improve the interlined and the space between characters
+
+% Titles structure
+\usepackage{titlesec}
+\setcounter{tocdepth}{2} 
+\setcounter{secnumdepth}{4}
+\titlespacing{\subsection}{2pt}{8pt}{2pt} 
+\titlespacing{\subsubsection}{4pt}{4pt}{1pt} % define the spaces at the structure between keys. The order is indent at the first line, distance before and distance after the title of the subsubsection in this case
+
+% Maths and symbols
+\usepackage{amsmath, amssymb}
+
+% Figures
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{wrapfig}
+\captionsetup{labelfont=bf, textfont=normal} % This line makes that the caption of the figures and tables appears in bold font
+
+% Bibliography settings
+\usepackage[authoryear]{natbib}
+
+% Other Utilities
+\usepackage{textcomp}
+\usepackage{fancybox}
+\usepackage{pdfpages}
+\usepackage{csquotes}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage[dvipsnames]{xcolor} % To change the color of a part of an equation
+\setlength{\parindent}{0pt}
+\usepackage[hidelinks]{hyperref} % To see the links. Unless Cleveref be used, this should be the last package
+\usepackage{cleveref} % To reference figures
+
+% Body of the document
+\begin{document}
+
+ 
+\twocolumn[\title{Literature review on smouldering combustion phenomena: Ignition and propagation of a front}
+\author{ROMERO, fredys}
+\maketitle
+\vspace{-3em}
+\rule{\linewidth}{0.5pt}
+\vspace{2em}] % Horizontal line of the width of the text with a thick of 0.5 pt 
+
+\section{Advances in literature review}
+\subsection{Introduction}
+Smouldering combustion is the slow, low-temperature, flameless burning of porous fuels and the most persistent type of combustion phenomena. It is sustained by the heat released when oxygen directly attacks the surface of a solid fuel. It is especially common in porous fuels which form a char on heating, like cellulosic insulation, polyurethane foam or peat. Smoldering combustion is among the leading causes of residential fires, and it is a source of safety concerns in industrial premises as well as in commercial and space flights \citep{rein_smoldering_2011}. 
+Typical peak temperatures for smoldering are in the range from 450 °C to 700 °C, although very energetic and dense fuels such as coal can reach peaks at around 1000°C. Two mechanisms controlling the rate of spread are the oxygen supply and the heat transfer. At the micro scale, smoldering takes place on the surface of the pores of a solid fuel, while at the macro scale, it is a bulk phenomenon affecting the fuel bed at large. In a smouldering front;  four distinct thermal and chemical subfronts constitutes the structure of the front. These are the preheating, drying, pyrolysis and oxidation. The endothermic preheating, drying and pyrolysis subfronts store or consume thermal energy and move ahead of the oxidation subfront The heat that sustains the spread is released at the oxidation subfront, and from there it is transferred via a combination of conduction, convection and radiation to the other subfronts.
+
+\begin{itemize}
+    \item \textbf{Preheating subfront}: Not involve chemical reactions or gas emissions in any significant quantity.
+    \item \textbf{Drying subfront}: Evaporation becoming important above 50 °C, emitting water vapour and leaving dry fuel.
+    \item \textbf{Pyrolysis subfront}: Follows the previous-ones; in this the temperatures increases and above a certain level the decomposition of organic matter occurs. 200 °C for polyurethane and 250 °C for cellulose.
+    \item \textbf{Oxidation subfront}: Consumes char and oxygen; releasing heat. Involves the oxidation of char and fuel; however the char oxidation is much more exothermic. Could overlaped with the pyrolysis subfront.
+\end{itemize}
+
+Smoldering will only spread if the heat losses are reduced or the rate of heat generation is increased, or both. In general, air is transported to the reaction front by convection and diffusion. Convection can be natural (buoyant) or forced. In the absence of forced flow, buoyancy tends to dominate over diffusion in regions of lesser flow resistance, for example near the surface.When a bed of fuel is ignited locally, in general the spread will be multidimensional and include both horizontal and vertical spread.
+The spread of a smouldering peat fire has two leading fronts that are significantly different. At the in-depth spread, a forward propagation configuration is assumed, where the airflow by diffusion or convection and the smouldering front moves in the same direction.At the lateral spread smoulder spreads along the top soil surface with an abundant oxygen supply, implying that the oxygen depletion in the reaction zone is negligible. So only species conservation for solid species is considered.
+
+   \subsubsection{Smoldering Kinetics}
+    Heterogeneous chemical kinetics governs the front structure and is ultimately responsible for determining the conditions under which a material ignites and extinguishes. In spite of the complex kinetic behavior, experimental evidence suggests that mechanisms consisting of only a few global reactions capture the most important characteristics of the chemical process and allow an approximate analysis. In its simplest form, smolderig can be understood as a two process: Pyrolysis, that produces char; and the char that is then oxidized \citep{Rein2016}. The potential of smoldering combustion then exist in any material that forms a significant amount of char during thermal decomposition.
+
+    \begin{equation}
+        Fuel (S) + Heat \rightarrow Pyrolyzate (G) + Char (S) + Ash (S) 
+        \tag{Pyrolysis}
+        \label{eq:Rn_0}
+    \end{equation}
+    
+    \begin{align*}
+        Char (S) + O_2 (G) \rightarrow Heat \\ + CO_2 (G) + H_2 O + Others (G) + Ash (S) 
+        \tag{Heterogeneous Oxidation}
+        \label{eq:Rn_1}
+    \end{align*}
+    
+    \begin{align*}
+        Pyrolyzate (G) + O_2 (G) \rightarrow Heat \\ + CO_2 (G) + H_2 O + Others (G) 
+        \tag{Gas-phase Oxidation}
+        \label{eq:Rn_2}
+    \end{align*}
+
+    \subsubsection{Supression}
+    A smoldering fire can be extraordinarily difficult to suppress. The amount of water required to suppress smoldering coal was measured to be in the range from 1 to 2 l of water per kg of burning fuel. Studies developed by Rein and Hadden determine that the better method to extinguish a smolder front is the shower use. However, the use of a spray is more efficient. Tuomissari et al. found that the injection of $CO_2$ in the bottom is the most effective way to supress a smoldering spread.
+
+    \subsubsection{Gas emissions}
+    Smoldering is an incomplete combustion, releasing species and quantities that substantially depart from in stoichiometric and complete combustion. It released includes a complex mix of substanves as Volatiles organics compounds (VOC); polyaromatic hydrocarbons (PAH); other hydrocarbons and particulate matter (PM). The residual char left behind the smolder front and the original porous bed act as a filter for the aerosol released.
+
+    \subsubsection{Transition to flamming}
+    Smouldering and flamming combustion are closely related, one can lead to the other. The transition to famming from a smoldering front it is a main concern in residential and wild fires.  In residential the slow buildup (acumulacion) of CO and other toxic gases are a severe threat.
+    In wildfires the re-establisment of fires in unexpected locations is a concern. Brabauskas and Krasny examined around of 102 fire test  in upholstery finding that 64 \% of them did transition to flamming, moreover the time of transition was between 22 - 306 min. Besides Quintiere showed that likelihood of having transition to flamming occurs with a 36\% at 50 -100 min; after the fire beginning. In the transition the smouldering front act as the source of gaseous fuel and the source of heat that ignite. Transition can be triggered by a combination of increasing the airflow velocity, the oxygen concentration or the external radiant heat. The transition has only been observed in forward propagation.
+
+
+In general it could be said that smolder is responsible for up to 50\% of the total burned biomaqq during wildfires \citep{Rein2016}. Moisture content is the single most important property governing the ignition and spread of smoldering wildfires. Critical moisture content for ignition of peat is in the range of 110 - 120\% in dry basis. The second most important property is the mineral content, more mineral content, less the critical moisture content. The mineral content is a heat sink.Any soil which composition is more than 80\% mineral, cannot be ignited. \textbf{After moisture and mineral contents, other important properties are bulk density, porosity, flow permeability and organic composition}.
+Smoldering wildfires can be classified in shallow or deep fronts. Organic material located close to the surface of the soil burns in shallow fires (roughly < 1 m of deep); this kind of fires propagates laterally and downwards along the organic layers of the ground, leave voids or holes in the soil. In other matters; deep fires takes place in organic the subsurface layers fed by oxygen infiltrating the ground via large cracks, piping systems or channels. Deep fires have a poorer supply of at,ospheric oxygen but are better insulated from heat losses in comparison with shallow fires. Smoldering fires have a detrimental effect on the forest soil, the microflora and the microfauna. Opposite to flamming fire in which the flames are present during a time period of 15 minutes and the temperatures in the deep layers  are below 80°C (> 40mm deep); in the smoldering fires the temperatures can reach temperatures up to 500°C and for much longer periods of time ( in the order of huors) which could be lethal to biological agents. In coals seam (veta de carbon) the ,ost representative example is the fire mountain in \textit{New South Wales} in Australia what it has been smouldering for more than 6000 years.
+
+
+ \begin{figure}[ht!] % [H] 
+    \centering
+    \includegraphics[width=0.7\linewidth]{Img/Huang00.jpg} % Ajusta el ancho relativo a la columna
+    \caption{Schematic diagram of the lateral and in-depth spreads of a smouldering wildfire in a layer of peat. Addapted from \citep{huang_smouldering_2014}}
+    \label{fig:Huang00}
+    \end{figure}
+
+   \begin{figure}[ht!] % [H] 
+    \centering
+    \includegraphics[width=0.7\linewidth]{Img/Huang0.jpg} % Ajusta el ancho relativo a la columna
+    \caption{Spread modes of 1-D smouldering combustion: (a) lateral spread; and (b) in-depth spread. Addapted from \citep{huang_smouldering_2014}}
+    \label{fig:Huang0}
+    \end{figure}
+
+\subsection{Literature Review}
+\cite{huang_smouldering_2014}
+\begin{itemize}
+    \item A genetic algorithm is applied to solve the corresponding inverse problem using TG data from the literature, and find the best kinetic and stoichiometric parameters for four types of boreal peat from different geographical locations (North China, Scotland and Siberia (2 samples)).
+    \item Most peat fires are initiated on the top surface of the fuel bed. The fire then spreads both laterally and in-depth, dominated by forward smouldering.
+    \item The spread of smouldering fires is dominated by heat and mass transfer processes in a reactive porous media. Among these mechanisms, the reactivity of peat in the form of a valid and quantified reaction scheme is currently missing.
+    \item The left hand side of \cref{fig:Huang1} shows the relative amounts of the different components found in typical peat samples, although the proportions can vary significantly with the ecosystem type (i:e. boreal, temperate or tropical).
+    
+    \begin{figure}[ht!] % [H] 
+    \centering
+    \includegraphics[width=0.7\linewidth]{Img/Huang1.jpg} % Ajusta el ancho relativo a la columna
+    \caption{The composition of peat and a possible decomposition paths and products. Addapted from \citep{huang_smouldering_2014}}
+    \label{fig:Huang1}
+    \end{figure}
+    
+    \item Peat can hold a wide range of moisture contents (MC) ranging from about 10\% under drought (sequia) conditions to well in excess of 300\% under flooded (inundacion) conditions. Thus, the corresponding drying process is crucial in determining the ignition and spread of smouldering peat fires. Experimental studies show that peat is not susceptible to fire ignition when the MC is above 115\%.
+    \item Hygroscopic water in porous media is dominant at MC < 100\% and can exist above the boiling temperature. In this form, the water is bonded to the solid surface within a thin film of 4–5 molecules thickness.
+
+    \begin{equation*}
+        Peat \cdot  \nu_{water} H_2 O \rightarrow  Peat +  \nu_{water} H_2 O \textcolor{cyan}{Gas}
+        \label{eq:H1_drying}
+    \end{equation*}
+    $ \nu_{water} $ is the initial moisture content in the dry basis. The conversion from dry basis [$m_i$] to wet basis - $m_i$ - is as follows: 
+    $m_i = [m_i](1-m_{w,0})=[m_i]/(1+MC)$
+
+    \item Smouldering involves the competition or pyrolysis and heterogeneous oxidations. The "most" complete but simple mechanism would be a 4-steps mechanism as show in the next equations:
+    
+    \begin{equation*}
+        Peat \rightarrow \nu_{\alpha, pp} \alpha_{char} + \nu_{gas,pp} \textcolor{violet}{Gas}
+        \label{eq:H2_pp}
+    \end{equation*}
+
+    \begin{equation*}
+        Peat +  \nu_{O_2,po} O_2 \rightarrow \nu_{\beta, po} \beta_{char} + \nu_{gas,po}\textcolor{Blue}{Gas}
+        \label{eq:H3_po}
+    \end{equation*}
+
+    \begin{equation*}
+        \beta_{char} + \nu_{O_2,\beta_0} O_2  \rightarrow \nu_{ash, \beta_0} Ash + \nu_{gas,\beta_0}\textcolor{ForestGreen}{Gas}
+        \label{eq:H4_bo}
+    \end{equation*}
+
+    \begin{equation*}
+        \alpha_{char} + \nu_{O_2,\alpha_0} O_2  \rightarrow \nu_{ash, \alpha_0} Ash + \nu_{gas,\alpha_0} \textcolor{Red}{Gas}
+        \label{eq:H5_ao}
+    \end{equation*}
+
+    \item Char is also called \textbf{pyrogenic char or black carbon}, and contains carbon in a porous structure but also other hydrocarbons and mineral species.
+    \item The $\alpha_{char}$ and $\beta_{char}$ are yielded through different decomposing mechanisms, so in general they have different structures, compositions, and reactivities. The peak temperate in smoldering combustion of peat is about 800 K.
+    \item Arrhenius law remains the best expression to quantify and to simulate condensed-phase reactions. As the parameters of reaction for peat are unknow, thermogravimetrics experiments provide an ideal environment of controllable atmosphere and heating rate, and negligible thermal gradient and transport effects during the degradation of the small solid.    
+    The following equation corresponds to the reaction rate for each of the individual reactions involved in the front 
+    
+    \begin{equation*}
+        \dot{\omega_k}(T, m_i, Y_{O_2})= (m_{i,\Sigma})A_k \mathrm{e}^{-E_k/RT}\left(\frac{m_i}{m_{i,\Sigma}}\right)^{n_k}{Y_{O_2}^{n_{O_2},k}}
+        \label{eq:H6_Ar}
+    \end{equation*}
+    
+    Where;
+
+    \begin{equation*}
+        m_{i,\Sigma}= m_{i,0} + \int_{0}^{t} \dot{\omega_{fi}} \,d\tau 
+        \label{eq:H7_Ar}
+    \end{equation*}
+
+    \item Use of the genetic algorithm to find the parameters in for each "specie" ($A_k$, $E_k$, $n_k$), and the coefficients of the char species and the initial water mass.
+    \item The \textbf{$\alpha_{char}$} specie didn't show a linear dependence with the parameters, most likely due to its very low reaction rate and low contribution with the total mass loss. According to the authors this could serve as evidence to affirm that add more reaction steps wouldn't improve the fit with TG data. 2 new mechanism - 3 reaction 3 species model and 2 step 3 species (neglecting the peat pyrolysis) - were proposed. Their degrees of fit were very similar (7.7 - 2 steps; 5.6 - 3 steps; 5.4 - 4 steps) as shown in fig \ref{fig:Huang5}.
+    
+    \begin{figure}[ht!] % [H] 
+    \centering
+    \includegraphics[width=0.7\linewidth]{Img/Huang5.jpg} % Ajusta el ancho relativo a la columna
+    \caption{Mass-loss rate of CH peat in air (k 1⁄4 10 K/min) simulated by chemical schemes with different number of steps. Addapted from \citep{huang_smouldering_2014}}
+    \label{fig:Huang5}
+    \end{figure}
+
+    \item For the samples from Scotland and Siberia, the model was tested using data from previous works to model inversely the kinetic parameters.
+    \item Including two kinds of char ($\alpha_{char}$ and $\beta_{char}$) could be crucial to explain the smouldering combustion of peat with a high OC.
+    \item Runing the simulations on the lateral and deep spread they found that a larger fraction of the original peat (36\%) is pyrolyzed (only 10\% at the lateral spread), and the oxidation rates of the two chars are comparable at high temperature. Pyrolysis becomes dominant, 98\% of the peat is pyrolyzed, and so as the $alpha_{char}$ oxidation at high temperature. At the in-depth front the pyrolysis and the corresponding path of becomes more important or even dominant because the oxygen supply is limited upstream.
+    \item \textbf{In summary}, a kinetic scheme, having good agreement with TG experiments, is not necessarily beneficial for more accurately modelling smouldering combustion under various environmental conditions, unless it includes all the important dominant physics.
+    \item Independent study of the evolution of the smoldering front in the 2 directions separatedly but What  happens if consider all at the same time ? It will be the same ?   
+\end{itemize}
+\vspace{2mm}
+\cite{Rein2006application}
+    \begin{itemize}
+        \item Determine the kinetics parameters that governs the thermal and oxidative degradation of PU foam through TGA data and Genetic Algorithm (GA). The method finds the kinetic and stoichiometric parameters that gives the best fit between the model and the experiments.
+        \item Mechanism of 5 - reactions steps based on Arrhenius-type reaction rate to describe both, forward and opposed smolder-propagation with the same kinetic mechanism.
+        \item The model developed capture well the phenomena of spatial distribution of the species and the reactions near the front in forward and opposed propagation.
+        \item The 5-Step mechanism and the calculated kinetic-parameters work well for the prediction of thermogravimetric data at different rates and gas atmospheres. The methodology proposed could be applied to other fuels or other available material properties as enthelpies of reaction; in this way is possible to explore the role of each reaction in the smolder front. \\
+        {\Large\textcolor{Red}{$\star$}} The kinetic scheme proposed is the first one to describe smoldering combustion of PU in both propagation modes in a one-dimensional model. Around 500 generations where needed to obtain a good agreement between the experimental results and the numerical simulations. 
+    \end{itemize}
+\vspace{2mm}
+\cite{Rein2007}
+    \begin{itemize}
+        \item  Model for simulate smoldering propagation in both modes was developed; using the 5-steps mechanism proposed in previous works. The computational model is capable to describe qualitatively and quantitatively the smoldering front behaviour. Specifically the reaction front structure and evolution and the transient temperature.
+        \item 
+    \end{itemize}
+\vspace{2mm}
+\cite{malow_smoldering_2008}
+    \begin{itemize}
+        \item Fires in storage facilities of bulk goods (granules, dust, recycling materials) are mainly smoldering or glowing fires. These fires are due to self-ignition observed in those kind of conditions and materials. The study addresses the influence of the volume fraction of Oxygen, reflecting the conditions that could be present in silos. 
+        \item It is important to know reaction temperatures, reaction rates and the composition of the relevant of the flue released by such fires. In bulk storages studies the reaction temperatures for smoldering were between 250 - 500 °C; and between 500 - 800 °C for glowing fire.
+        \item In previous studies by Bowes and Thomas; self-ignition temepratures at oxygen volume fractions between 4 - 30 \% self-ignition was reported. There found that the temperature increase inversely with the oxygen level.
+        \item They found that, as expected; the combustion was faster with a high oxygen value 
+    \end{itemize} 
+
+
+
+\newpage
+
+\section{Conclusions}
+
+\newpage
+\bibliographystyle{apalike}
+\bibliography{20251112biblio}
+
+
+\end{document}
