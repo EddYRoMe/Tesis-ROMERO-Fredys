@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1763556826.9632 "main.aux" "main.bbl" "main" 1763560855.33426 0
-  "./20251112biblio.bib" 1763556795 64321 e3d77a63a71ef148a3d41721c3ff23b0 ""
+["bibtex main"] 1763982083.45754 "main.aux" "main.bbl" "main" 1763995420.76545 0
+  "./20251112biblio.bib" 1763712090 62566 d9a66ea26cbbf050dcac7c2e44b6694b ""
   "c:/texlive/2025/texmf-dist/bibtex/bst/base/apalike.bst" 1762362678 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "main.aux" 1763560854 5696 02a2cba17015a9018ad1fa31db55062e "pdflatex"
+  "main.aux" 1763995419 5796 d09d932bfff874090ce6cb365aa4c269 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1763560852.71255 "//datapprime.w.ensma.fr/lcd_users/users/romeromf/Bureau/Tesis-ROMERO-Fredys/main.tex" "main.pdf" "main" 1763560855.33984 0
-  "//datapprime.w.ensma.fr/lcd_users/users/romeromf/Bureau/Tesis-ROMERO-Fredys/main.tex" 1763560852 21422 d5a19341115e8b49ad12610651c4efb6 ""
+["pdflatex"] 1763995417.73648 "//datapprime.w.ensma.fr/lcd_users/users/romeromf/Bureau/Tesis-ROMERO-Fredys/main.tex" "main.pdf" "main" 1763995420.77421 0
+  "//datapprime.w.ensma.fr/lcd_users/users/romeromf/Bureau/Tesis-ROMERO-Fredys/main.tex" 1763995417 27699 12287a959374661fef2d2c1208f6e017 ""
   "Img/Huang0.jpg" 1763124261 90974 5168eae7852ac5fb5820176c6ea60832 ""
   "Img/Huang00.jpg" 1763124454 62610 098447a48b60e4d12207302f7983b9ba ""
   "Img/Huang1.jpg" 1762953451 46192 a94f34e4d6c5fd25152f33ae57eac8ec ""
@@ -164,10 +164,10 @@
   "c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1762366766 5574345 9e0538e80e24c9ae9ee679f6f1bbacd7 ""
   "c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1762366961 3635480 85781318605f38b8282d242f9675e268 ""
   "c:/texlive/2025/texmf.cnf" 1762366749 713 e69b156964470283e0530f5060668171 ""
-  "main.aux" 1763560854 5696 02a2cba17015a9018ad1fa31db55062e "pdflatex"
-  "main.bbl" 1763556827 1594 80004f2edf7041385c06c7a8ffbad4a9 "bibtex main"
-  "main.out" 1763560854 557 4c7b84892ef27b91b03e2a5eb02aaa83 "pdflatex"
-  "main.tex" 1763560852 21422 d5a19341115e8b49ad12610651c4efb6 ""
+  "main.aux" 1763995419 5796 d09d932bfff874090ce6cb365aa4c269 "pdflatex"
+  "main.bbl" 1763982084 1806 bf372bb323c7858be5e7b59eafba6b32 "bibtex main"
+  "main.out" 1763995419 557 4c7b84892ef27b91b03e2a5eb02aaa83 "pdflatex"
+  "main.tex" 1763995417 27699 12287a959374661fef2d2c1208f6e017 ""
   (generated)
   "main.aux"
   "main.log"
